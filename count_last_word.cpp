@@ -1,0 +1,24 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+class Solution {
+public:
+    int lengthOfLastWord(string s) {
+        int size = s.size();
+        int i = size - 1;
+        int count = 0;
+
+        while (i >= 0 && s[i] == ' ') {
+            i--;
+        }
+    
+
+        while (i>=0 && s[i] != ' '){          
+            i--;
+            count++;
+
+        };
+        return count;
+    }
+    
+}; 
